@@ -28,7 +28,7 @@ function displayImg(parsedJson, idx = -1, numberOfImages = 1){
 	else {
 		for (let i = 0; i < numberOfImages; i++) {
 			imgInfo = getInfo(parsedJson, i);	
-			$("#imagesgohere").prepend('<figure><img id="theImg" src=' + imgInfo["URL"] + ' /><figcaption>' + (caption == true ? '<figcaption>' + imgInfo["Caption"] + '</figcaption>' : "") + '</figcaption></figure>');
+			$("#grid").prepend('<figure><img id="gridimg" src=' + imgInfo["URL"] + ' />' + (caption == true ? '<figcaption>' + imgInfo["Caption"] + '</figcaption>' : "") + '</figure>');
 		}
 	}
 }
