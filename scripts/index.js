@@ -44,7 +44,9 @@ $(document).ready(function () {
 		url: "https://humanclock.com/index.php?l=" + date
 	}).done(function (parsedJson) {
 		var numImages = Object.keys(parsedJson["rd"]["data"][0]["images"]["imgData"]).length
-		chrome.storage.sync.get(['user_mode', 'caption'], function (result) {
+		chrome.storage.sync.get(['user_mode', 'caption', 'dark'], function (result) {
+		if (result.dark !== undefined)
+			document.body.style.backgroundColor = "black";
 		if (result.user_mode !== undefined)
 			userMode = result.user_mode;
 		if (result.caption !== undefined)
