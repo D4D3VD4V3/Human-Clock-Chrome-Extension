@@ -1,0 +1,10 @@
+{
+ 	"manifest_version": 2,
+ 	"name": "Unofficial Human Clock",
+	"permissions": ["*://*.humanclock.com/*"],
+ 	"version": "1.0",
+	"description": "Display images from the Human Clock project whenever you open a new tab.",
+  	"chrome_url_overrides" : {
+    	"newtab": "index.html"
+  	}
+}
