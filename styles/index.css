@@ -5,3 +5,9 @@ figcaption {
   padding: 2px;
   text-align: center;
 }
+figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
