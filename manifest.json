@@ -1,10 +1,14 @@
 {
  	"manifest_version": 2,
  	"name": "Unofficial Human Clock",
-	"permissions": ["*://*.humanclock.com/*"],
+	"permissions": ["*://*.humanclock.com/*", "storage"],
  	"version": "1.0",
 	"description": "Display images from the Human Clock project whenever you open a new tab.",
   	"chrome_url_overrides" : {
     	"newtab": "index.html"
-  	}
+  	},
+	"browser_action": {
+	"default_title": "Human Clock extension",
+	"default_popup": "settings.html"
+  }
 }
