@@ -1,4 +1,4 @@
-# Human-Clock-Chrome-Extension
+# Human Clock Chrome New Tab Extension
 This is an unofficial project. I am in no way affiliated with the Human Clock project.
 
 Get images from the [Human Clock project](https://www.humanclock.com/) for your current time when you open a new tab. Choose between a random image, the first one in the list and, a responsive grid of *all* images for that time! You can also toggle the captions on/off. There's also a dark background option for those those who prefer dark mode.
